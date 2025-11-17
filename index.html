@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property-Hub - Syllabus Version</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ccc;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .main-header {
+            background-color: #1c1c1c;
+            border-bottom: 1px solid #333;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+            float: left;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        .nav-links li a {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .search-form {
+            background-color: #242424;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .search-form input,
+        .search-form select,
+        .search-form button {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #333;
+            color: #eee;
+        }
+        
+        .search-form button {
+            background-color: #FFB300;
+            color: #121212;
+            cursor: pointer;
+        }
+
+        .main-content {
+            background-color: #1c1c1c;
+            padding: 40px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .section-header h2 {
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .property-card {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #242424;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .property-image {
+            position: relative;
+            height: 220px;
+            background-color: #333;
+        }
+        
+        .property-image {
+            position: relative;
+            height: 220px;
+            background-color: #0D47A1;
+        }
+        
+        .property-image img {
+            width: 100%;
+            height: 220px;
+        }
+        
+        .status-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #FFB300;
+            color: #121212;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .price-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #1c1c1c;
+            color: #FFB300;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+        .property-content {
+            padding: 20px;
+        }
+        
+        .property-content h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: #FFB300;
+        }
+        
+        .property-content p {
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+        
+        .property-features {
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+        
+        .property-features span {
+            margin-right: 15px;
+        }
+
+        .main-footer {
+            background-color: #1c1c1c;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-grid {
+            overflow: hidden;
+        }
+
+        .footer-column {
+            width: 300px;
+            float: left;
+            margin: 0 10px;
+            text-align: left;
+        }
+        
+        .footer-column h4 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .footer-column li a {
+            color: #aaa;
+        }
+
+        .footer-column input {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #eee;
+        }
+        
+        .footer-column button {
+            background-color: #FFB300;
+            color: #121212;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Property-Hub</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Find Your Perfect Home</h1>
+                <p>The best properties</p>
+                
+                <form class="search-form">
+                    <input type="text" placeholder="Enter a city...">
+                    <select>
+                        <option>Any Price</option>
+                        <option>$100,000 - $200,000</option>
+                    </select>
+                    <select>
+                        <option>Beds & Baths</option>
+                        <option>2+ Beds</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Property</h2>
+                    <p>Handpicked property just for you. <a href="properties.html">View all</a></p>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://placehold.co/400x220/0D47A1/white?text=Modern+Villa" alt="Property Image">
+                        <span class="status-tag">For Sale</span>
+                        <span class="price-tag">$850,000</span>
+                    </div>
+                    <div class="property-content">
+                        <h3>Luxury Villa in Miami</h3>
+                        <p>123 Sunshine Blvd, Miami, FL</p>
+                        <div class="property-features">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>2,800 SqFt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Property-Hub</h4>
+                    <p>Your trusted partner in finding the perfect property.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Rishihood University</li>
+                        <li>krishna.s25233@nst.rishihood.edu.in</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Your email" style="width: 180px; padding: 5px;">
+                        <button type="submit" style="padding: 5px;">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Property-Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

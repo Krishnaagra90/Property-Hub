@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Properties - Property-Hub</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ccc;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .main-header {
+            background-color: #1c1c1c;
+            border-bottom: 1px solid #333;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+            float: left;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        .nav-links li a {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        .main-content {
+            background-color: #1c1c1c;
+            padding: 40px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .section-header h2 {
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .listings-grid {
+            margin: 0 -10px;
+            overflow: hidden;
+        }
+
+        .property-card {
+            width: 300px;
+            float: left;
+            margin: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #242424;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .property-image {
+            position: relative;
+            height: 180px;
+            background-color: #0D47A1;
+        }
+        
+        .property-image img {
+            width: 100%;
+            height: 180px;
+        }
+        
+        .status-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #FFB300;
+            color: #121212;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .status-tag.rent {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .price-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #1c1c1c;
+            color: #FFB300;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .property-content {
+            padding: 15px;
+        }
+        
+        .property-content h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #FFB300;
+        }
+        
+        .property-content p {
+            color: #aaa;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .property-features {
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        
+        .property-features span {
+            margin-right: 10px;
+        }
+
+        .main-footer {
+            background-color: #1c1c1c;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+            clear: both;
+        }
+        
+        .footer-bottom {
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Property-Hub</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="container">
+                <div class="section-header">
+                    <h2>All Properties</h2>
+                    <p>Browse our complete catalog of homes.</p>
+                </div>
+                
+                <div class="listings-grid">
+                    
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://placehold.co/300x180/0D47A1/white?text=Modern+Villa" alt="Property Image">
+                            <span class="status-tag">For Sale</span>
+                            <span class="price-tag">$850,000</span>
+                        </div>
+                        <div class="property-content">
+                            <h3>Luxury Villa in Miami</h3>
+                            <p>123 Sunshine Blvd, Miami, FL</p>
+                            <div class="property-features">
+                                <span>4 Beds</span>
+                                <span>3 Baths</span>
+                                <span>2,800 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://placehold.co/300x180/28a745/white?text=Cozy+Apartment" alt="Property Image">
+                            <span class="status-tag rent">For Rent</span>
+                            <span class="price-tag">$2,200/mo</span>
+                        </div>
+                        <div class="property-content">
+                            <h3>Downtown Loft</h3>
+                            <p>456 Main St, New York, NY</p>
+                            <div class="property-features">
+                                <span>2 Beds</span>
+                                <span>1 Bath</span>
+                                <span>950 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://placehold.co/300x180/606060/white?text=Family+Home" alt="Property Image">
+                            <span class="status-tag">For Sale</span>
+                            <span class="price-tag">$420,000</span>
+                        </div>
+                        <div class="property-content">
+                            <h3>Suburban Family Home</h3>
+                            <p>789 Oak Ln, Austin, TX</p>
+                            <div class="property-features">
+                                <span>3 Beds</span>
+                                <span>2 Baths</span>
+                                <span>1,900 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://placehold.co/300x180/FFB300/white?text=Beach+Condo" alt="Property Image">
+                            <span class="status-tag">For Sale</span>
+                            <span class="price-tag">$1,250,000</span>
+                        </div>
+                        <div class="property-content">
+                            <h3>Beachfront Condo</h3>
+                            <p>101 Ocean Dr, Los Angeles, CA</p>
+                            <div class="property-features">
+                                <span>3 Beds</span>
+                                <span>3 Baths</span>
+                                <span>2,100 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://placehold.co/300x180/0B3D91/white?text=Studio" alt="Property Image">
+                            <span class="status-tag rent">For Rent</span>
+                            <span class="price-tag">$1,600/mo</span>
+                        </div>
+                        <div class="property-content">
+                            <h3>Chic Studio Apartment</h3>
+                            <p>222 City Ave, Chicago, IL</p>
+                            <div class="property-features">
+                                <span>1 Bed</span>
+                                <span>1 Bath</span>
+                                <span>600 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://placehold.co/300x180/777777/white?text=Rustic+Cabin" alt="Property Image">
+                            <span class="status-tag">For Sale</span>
+                            <span class="price-tag">$310,000</span>
+                        </div>
+                        <div class="property-content">
+                            <h3>Rustic Mountain Cabin</h3>
+                            <p>333 Forest Rd, Denver, CO</p>
+                            <div class="property-features">
+                                <span>2 Beds</span>
+                                <span>2 Baths</span>
+                                <span>1,400 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Property-Hub. All rights reserved.</p>
+                <p>Contact: krishna.s25233@nst.rishihood.edu.in</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
